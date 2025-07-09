@@ -111,16 +111,105 @@ export default function HomePage() {
   ]
 
   const techStack = [
+    // Core Technologies
     "React",
     "Next.js",
+    "TypeScript",
     "Node.js",
     "Python",
-    "TypeScript",
     "MongoDB",
     "PostgreSQL",
     "AWS",
     "Docker",
     "Kubernetes",
+    
+    // Frontend & UI
+    "Vue.js",
+    "Angular",
+    "Tailwind CSS",
+    "Material-UI",
+    "Framer Motion",
+    "Three.js",
+    "Redux",
+    "GraphQL",
+    
+    // Backend & APIs
+    "Express.js",
+    "Django",
+    "FastAPI",
+    "Java",
+    "Spring Boot",
+    "Go",
+    "Rust",
+    "REST APIs",
+    
+    // Mobile & Cross-platform
+    "React Native",
+    "Flutter",
+    "Swift",
+    "Kotlin",
+    
+    // Databases & Storage
+    "Redis",
+    "Elasticsearch",
+    "Firebase",
+    "Supabase",
+    
+    // Cloud & DevOps
+    "Google Cloud",
+    "Azure",
+    "Terraform",
+    "GitHub Actions",
+    "Prometheus",
+    "Grafana",
+    
+    // AI & Machine Learning
+    "TensorFlow",
+    "PyTorch",
+    "OpenAI API",
+    "Hugging Face",
+    "LangChain",
+    
+    // Data & Analytics
+    "Apache Spark",
+    "Apache Kafka",
+    "Tableau",
+    "Power BI",
+    
+    // Web3 & Blockchain
+    "Blockchain",
+    "Web3",
+    "Solidity",
+    "Ethereum",
+    
+    // Payment & E-commerce
+    "Stripe",
+    "Shopify",
+    
+    // Communication
+    "Twilio",
+    "Slack API",
+    
+    // Authentication
+    "Auth0",
+    "NextAuth.js",
+    
+    // Development Tools
+    "Git",
+    "VS Code",
+    "Jest",
+    "Cypress",
+    "Vite",
+    "ESLint",
+    
+    // Monitoring
+    "Sentry",
+    "Google Analytics",
+    
+    // Deployment
+    "Vercel",
+    "Netlify",
+    "Heroku"
   ]
 
   const coreValues = [
@@ -205,14 +294,15 @@ export default function HomePage() {
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 text-lg"
             >
-              Get Started <ArrowRight className="ml-2 h-5 w-5" />
+              
+              <Link href="/contact">Get Started </Link><ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="px-8 py-3 text-lg border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
             >
-              View Our Work
+             <Link href="/projects">View Our Work</Link>
             </Button>
           </motion.div>
         </motion.div>
@@ -398,54 +488,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              What Our Clients Say
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Don't just take our word for it - hear from our satisfied clients
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={testimonial.name}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -5 }}
-              >
-                <Card className="h-full bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300">
-                  <CardContent className="p-8">
-                    <div className="flex mb-4">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                      ))}
-                    </div>
-                    <p className="text-muted-foreground mb-6 italic">"{testimonial.text}"</p>
-                    <div>
-                      <p className="font-bold text-slate-800 dark:text-white">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.company}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+    
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto text-center">

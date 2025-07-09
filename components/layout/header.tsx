@@ -49,10 +49,10 @@ export default function Header() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="text-white font-bold text-xl">M</span>
+              <span className="text-white font-bold text-xl">NS</span>
             </motion.div>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Mereb Technologies
+            Negarit Systems
             </span>
           </Link>
 

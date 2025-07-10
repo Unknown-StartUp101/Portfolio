@@ -9,7 +9,7 @@ import Image from "next/image"
 export default function AboutPage() {
   const teamMembers = [
     {
-      name: "Abebe Tadesse",
+      name: "Abdullah Farid",
       role: "Full-Stack Developer & Co-Founder",
       specialization: "React, Node.js, System Architecture",
       image: "/placeholder.svg?height=300&width=300",
@@ -17,7 +17,7 @@ export default function AboutPage() {
       social: { linkedin: "#", github: "#", twitter: "#" },
     },
     {
-      name: "Hanan Mohammed",
+      name: "Bisrat Berhanu",
       role: "UI/UX Designer & Co-Founder",
       specialization: "User Experience, Interface Design, Prototyping",
       image: "/placeholder.svg?height=300&width=300",
@@ -25,7 +25,7 @@ export default function AboutPage() {
       social: { linkedin: "#", github: "#", twitter: "#" },
     },
     {
-      name: "Dawit Alemayehu",
+      name: "Hermon Getachew",
       role: "Backend Developer & Co-Founder",
       specialization: "Python, Django, Database Design",
       image: "/placeholder.svg?height=300&width=300",
@@ -33,7 +33,7 @@ export default function AboutPage() {
       social: { linkedin: "#", github: "#", twitter: "#" },
     },
     {
-      name: "Meron Getachew",
+      name: "Kidus Melaku",
       role: "Frontend Developer & Co-Founder",
       specialization: "React, Vue.js, Mobile Development",
       image: "/placeholder.svg?height=300&width=300",
@@ -41,7 +41,7 @@ export default function AboutPage() {
       social: { linkedin: "#", github: "#", twitter: "#" },
     },
     {
-      name: "Samuel Bekele",
+      name: "Melakeselam Yitbarek",
       role: "AI/ML Engineer & Co-Founder",
       specialization: "Machine Learning, Data Science, Python",
       image: "/placeholder.svg?height=300&width=300",
@@ -49,7 +49,7 @@ export default function AboutPage() {
       social: { linkedin: "#", github: "#", twitter: "#" },
     },
     {
-      name: "Bethlehem Haile",
+      name: "Nahom Mitiku",
       role: "DevOps Engineer & Co-Founder",
       specialization: "AWS, Docker, CI/CD, Infrastructure",
       image: "/placeholder.svg?height=300&width=300",
@@ -57,7 +57,7 @@ export default function AboutPage() {
       social: { linkedin: "#", github: "#", twitter: "#" },
     },
     {
-      name: "Yonas Tesfaye",
+      name: "Simon Assfaw",
       role: "Mobile Developer & Co-Founder",
       specialization: "React Native, Flutter, iOS/Android",
       image: "/placeholder.svg?height=300&width=300",
@@ -65,12 +65,11 @@ export default function AboutPage() {
       social: { linkedin: "#", github: "#", twitter: "#" },
     },
     {
-      name: "Rahel Assefa",
-      role: "Product Manager & Co-Founder",
-      specialization: "Product Strategy, Project Management, Agile",
+      name: "Yonatan Tizazu",
+      role: "Backend Developer & DevOps Engineer",
+      specialization: "Node js, Express js Nest js, hono js, Golang, gin, gorilla mux, Database Design, AWS, Docker, CI/CD, Infrastructure",
       image: "/placeholder.svg?height=300&width=300",
-      description: "Focused on delivering products that create real value for users.",
-      social: { linkedin: "#", github: "#", twitter: "#" },
+      description: "Expert in building robust backend systems, APIs, cloud infrastructure and deployment automation.",
     },
   ]
 
@@ -107,13 +106,11 @@ export default function AboutPage() {
             className="grid lg:grid-cols-2 gap-12 items-center mb-20"
           >
             <div>
-              <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Founded in 2025
-              </h2>
+
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Negarit Systems was born from the shared vision of eight passionate graduates from Addis Ababa
-                  University's Institute of Technology. United by our love for technology and driven by the desire to
+                  <span className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Negarit Systems</span> was born from the shared vision of eight passionate graduates from Addis Ababa
+                  Institute of Technology. United by our love for technology and driven by the desire to
                   create meaningful impact, we came together to form a company that would bridge the gap between
                   innovative ideas and practical solutions.
                 </p>
@@ -122,12 +119,6 @@ export default function AboutPage() {
                   engineering, artificial intelligence, mobile development, DevOps, and product management. This
                   multidisciplinary approach allows us to tackle complex challenges from every angle and deliver
                   comprehensive solutions.
-                </p>
-                <p>
-                  From our headquarters in Addis Ababa, we're on a mission to create innovative, impactful software
-                  solutions that not only serve local needs but also compete on the global stage. We believe that great
-                  technology knows no boundaries, and we're proud to represent Ethiopia in the international tech
-                  community.
                 </p>
               </div>
             </div>
@@ -204,7 +195,7 @@ export default function AboutPage() {
               Meet Our Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Eight passionate individuals united by a shared vision to create innovative technology solutions
+              We are passionate individuals united by a shared vision to create innovative technology solutions
             </p>
           </motion.div>
 
@@ -246,7 +237,7 @@ export default function AboutPage() {
 
                     <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{member.description}</p>
 
-                    <div className="flex justify-center gap-3">
+                    {/* <div className="flex justify-center gap-3">
                       <motion.a
                         href={member.social.linkedin}
                         whileHover={{ scale: 1.2 }}
@@ -268,7 +259,7 @@ export default function AboutPage() {
                       >
                         <Twitter className="h-5 w-5" />
                       </motion.a>
-                    </div>
+                    </div> */}
                   </CardContent>
                 </Card>
               </motion.div>

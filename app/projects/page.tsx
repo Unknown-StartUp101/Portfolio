@@ -6,71 +6,9 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github, Calendar, Users } from "lucide-react"
 import Image from "next/image"
+import { projects } from "./project_list"
 
 export default function ProjectsPage() {
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with AI-powered recommendations and real-time analytics.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Node.js", "MongoDB", "AI/ML"],
-      category: "Web Development",
-      duration: "6 months",
-      team: "5 developers",
-      features: ["AI Recommendations", "Real-time Analytics", "Payment Integration", "Admin Dashboard"],
-    },
-    {
-      title: "Healthcare Management System",
-      description: "Comprehensive healthcare platform connecting patients, doctors, and administrators.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Next.js", "PostgreSQL", "TypeScript", "AWS"],
-      category: "Healthcare",
-      duration: "8 months",
-      team: "6 developers",
-      features: ["Patient Portal", "Doctor Dashboard", "Appointment Scheduling", "Medical Records"],
-    },
-    {
-      title: "FinTech Mobile App",
-      description: "Secure mobile banking application with biometric authentication and blockchain integration.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React Native", "Blockchain", "Node.js", "Security"],
-      category: "Mobile Development",
-      duration: "10 months",
-      team: "8 developers",
-      features: ["Biometric Auth", "Blockchain", "Real-time Transactions", "Multi-currency Support"],
-    },
-    {
-      title: "AI-Powered Analytics Dashboard",
-      description: "Business intelligence platform with machine learning insights and predictive analytics.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Python", "TensorFlow", "React", "D3.js"],
-      category: "AI & Data",
-      duration: "4 months",
-      team: "4 developers",
-      features: ["Predictive Analytics", "Real-time Dashboards", "ML Models", "Data Visualization"],
-    },
-    {
-      title: "Educational Platform",
-      description: "Interactive learning management system with video streaming and progress tracking.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Vue.js", "Laravel", "MySQL", "WebRTC"],
-      category: "Education",
-      duration: "7 months",
-      team: "5 developers",
-      features: ["Video Streaming", "Progress Tracking", "Interactive Quizzes", "Certification System"],
-    },
-    {
-      title: "IoT Smart City Solution",
-      description: "Comprehensive IoT platform for smart city management with real-time monitoring.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["IoT", "Python", "React", "InfluxDB"],
-      category: "IoT",
-      duration: "12 months",
-      team: "10 developers",
-      features: ["Real-time Monitoring", "Sensor Integration", "Data Analytics", "Alert System"],
-    },
-  ]
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-950">
       {/* Hero Section */}
@@ -111,13 +49,25 @@ export default function ProjectsPage() {
               >
                 <Card className="h-full bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden">
                   <div className="relative overflow-hidden">
-                    <Image
+                    {project.image && (project.image.endsWith(".webm") || project.image.endsWith(".mp4")) ? (
+                      <video
+                      src={project.image}
+                      controls
+                      autoPlay
+                      loop
+                      muted
+                      className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      poster="/placeholder.svg"
+                      />
+                    ) : (
+                      <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       width={500}
                       height={300}
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
+                      />
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute top-4 right-4">
                       <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0">
@@ -132,17 +82,6 @@ export default function ProjectsPage() {
                     </h3>
 
                     <p className="text-muted-foreground mb-6 leading-relaxed">{project.description}</p>
-
-                    <div className="flex items-center gap-6 mb-6 text-sm text-muted-foreground">
-                      <div className="flex items-center gap-2">
-                        <Calendar className="h-4 w-4" />
-                        <span>{project.duration}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Users className="h-4 w-4" />
-                        <span>{project.team}</span>
-                      </div>
-                    </div>
 
                     <div className="mb-6">
                       <h4 className="font-semibold mb-3 text-slate-800 dark:text-white">Key Features:</h4>
@@ -168,21 +107,39 @@ export default function ProjectsPage() {
                     </div>
 
                     <div className="flex gap-3">
-                      <Button
+                      {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        tabIndex={-1}
+                      >
+                        <Button
                         size="sm"
                         className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
-                      >
+                        >
                         <ExternalLink className="h-4 w-4 mr-2" />
                         Live Demo
-                      </Button>
-                      <Button
+                        </Button>
+                      </a>
+                      )}
+                      {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        tabIndex={-1}
+                      >
+                        <Button
                         size="sm"
                         variant="outline"
                         className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent"
-                      >
+                        >
                         <Github className="h-4 w-4 mr-2" />
                         Code
-                      </Button>
+                        </Button>
+                      </a>
+                      )}
                     </div>
                   </CardContent>
                 </Card>

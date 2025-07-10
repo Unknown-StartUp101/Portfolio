@@ -67,7 +67,7 @@ export default function AboutPage() {
     {
       name: "Yonatan Tizazu",
       role: "Backend Developer & DevOps Engineer",
-      specialization: "Node js, Express js Nest js, hono js, Golang, gin, gorilla mux, Database Design, AWS, Docker, CI/CD, Infrastructure",
+      specialization: " Node.js, Express.js, Nest.js, Hono.js, Golang, Gin , Gorilla Mux, Database Design, AWS, Docker, CI/CD, Infrastructure",
       image: "/placeholder.svg?height=300&width=300",
       description: "Expert in building robust backend systems, APIs, cloud infrastructure and deployment automation.",
     },
@@ -105,23 +105,22 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="grid lg:grid-cols-2 gap-12 items-center mb-20"
           >
-            <div>
-
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                <p>
-                  <span className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Negarit Systems</span> was born from the shared vision of eight passionate graduates from Addis Ababa
-                  Institute of Technology. United by our love for technology and driven by the desire to
-                  create meaningful impact, we came together to form a company that would bridge the gap between
-                  innovative ideas and practical solutions.
-                </p>
-                <p>
-                  Our diverse team brings together expertise in UI/UX design, full-stack development, backend
-                  engineering, artificial intelligence, mobile development, DevOps, and product management. This
-                  multidisciplinary approach allows us to tackle complex challenges from every angle and deliver
-                  comprehensive solutions.
-                </p>
-              </div>
+            
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                <span className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Negarit Systems</span> was born from the shared vision of eight passionate graduates from Addis Ababa
+                Institute of Technology. United by our love for technology and driven by the desire to
+                create meaningful impact, we came together to form a company that would bridge the gap between
+                innovative ideas and practical solutions.
+              </p>
+              <p>
+                Our diverse team brings together expertise in UI/UX design, full-stack development, backend
+                engineering, artificial intelligence, mobile development, DevOps, and product management. This
+                multidisciplinary approach allows us to tackle complex challenges from every angle and deliver
+                comprehensive solutions.
+              </p>
             </div>
+            
             <div className="relative">
               <motion.div className="relative z-10" whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
                 <Image
@@ -236,30 +235,6 @@ export default function AboutPage() {
                     <p className="text-sm text-muted-foreground mb-4">{member.specialization}</p>
 
                     <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{member.description}</p>
-
-                    {/* <div className="flex justify-center gap-3">
-                      <motion.a
-                        href={member.social.linkedin}
-                        whileHover={{ scale: 1.2 }}
-                        className="text-blue-600 hover:text-blue-700 transition-colors"
-                      >
-                        <Linkedin className="h-5 w-5" />
-                      </motion.a>
-                      <motion.a
-                        href={member.social.github}
-                        whileHover={{ scale: 1.2 }}
-                        className="text-slate-600 hover:text-slate-700 transition-colors"
-                      >
-                        <Github className="h-5 w-5" />
-                      </motion.a>
-                      <motion.a
-                        href={member.social.twitter}
-                        whileHover={{ scale: 1.2 }}
-                        className="text-blue-400 hover:text-blue-500 transition-colors"
-                      >
-                        <Twitter className="h-5 w-5" />
-                      </motion.a>
-                    </div> */}
                   </CardContent>
                 </Card>
               </motion.div>

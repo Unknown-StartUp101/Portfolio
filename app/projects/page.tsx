@@ -24,7 +24,7 @@ export default function ProjectsPage() {
               Our Projects
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              At Mereb Technologies, we deliver innovative solutions that drive impact. From cutting-edge web
+              At Negarit Systems, we deliver innovative solutions that drive impact. From cutting-edge web
               applications to AI-powered platforms, our portfolio showcases our commitment to excellence and our ability
               to transform ideas into reality. Each project represents our dedication to creating scalable, user-centric
               solutions that make a difference.

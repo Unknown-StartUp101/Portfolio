@@ -223,7 +223,7 @@ export default function HomePage() {
     {
       name: "Sarah Johnson",
       company: "TechCorp Inc.",
-      text: "Mereb Technologies transformed our digital presence with their innovative solutions. Exceptional work!",
+      text: "Negarit Systems transformed our digital presence with their innovative solutions. Exceptional work!",
       rating: 5,
     },
     {

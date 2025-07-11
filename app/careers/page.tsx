@@ -102,7 +102,7 @@ export default function CareersPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Why Choose Mereb Technologies?
+              Why Choose Negarit Systems?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We offer more than just a job - we offer a chance to be part of a mission that matters

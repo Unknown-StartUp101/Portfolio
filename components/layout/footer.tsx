@@ -50,7 +50,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">M</span>
               </div>
-              <span className="text-xl font-bold">Mereb Technologies</span>
+              <span className="text-xl font-bold">Negarit Systems</span>
             </div>
             <p className="text-slate-300 mb-6 leading-relaxed">
               Building innovative technology solutions from Ethiopia to the world. We create scalable, impactful
@@ -137,7 +137,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">hello@merebtech.com</span>
+                <span className="text-slate-300 text-sm">hello@negaritsystems.com</span>
               </div>
             </div>
 
@@ -174,7 +174,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="text-slate-400 text-sm"
           >
-            © {currentYear} Mereb Technologies. All rights reserved.
+            © {currentYear} Negarit Systems. All rights reserved.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}

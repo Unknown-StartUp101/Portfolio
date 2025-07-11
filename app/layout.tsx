@@ -9,27 +9,27 @@ import Footer from "@/components/layout/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Mereb Technologies - Building What's Next. Today.",
+  title: "Negarit Systems - Building What's Next. Today.",
   description:
     "Born in Ethiopia. Built for the World. We create innovative, scalable technology solutions that drive impact from Addis Ababa to the global stage.",
   keywords:
     "web development, mobile apps, UI/UX design, AI solutions, Ethiopia, Addis Ababa, technology, software development",
-  authors: [{ name: "Mereb Technologies" }],
-  creator: "Mereb Technologies",
-  publisher: "Mereb Technologies",
+  authors: [{ name: "Negarit Systems" }],
+  creator: "Negrait Systems",
+  publisher: "Negarit Systems",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://merebtech.com",
-    title: "Mereb Technologies - Building What's Next. Today.",
+    url: "https://negaritsystems.com",
+    title: "Negrait Systems - Building What's Next. Today.",
     description: "Born in Ethiopia. Built for the World. We create innovative, scalable technology solutions.",
-    siteName: "Mereb Technologies",
+    siteName: "Negarit Systems",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mereb Technologies - Building What's Next. Today.",
+    title: "Negarit Systems - Building What's Next. Today.",
     description: "Born in Ethiopia. Built for the World. We create innovative, scalable technology solutions.",
-    creator: "@merebtech",
+    creator: "@negaritsys",
   },
   robots: {
     index: true,

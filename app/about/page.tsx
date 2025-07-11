@@ -112,7 +112,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Mereb Technologies was born from the shared vision of eight passionate graduates from Addis Ababa
+                  Negarit Systems was born from the shared vision of eight passionate graduates from Addis Ababa
                   University's Institute of Technology. United by our love for technology and driven by the desire to
                   create meaningful impact, we came together to form a company that would bridge the gap between
                   innovative ideas and practical solutions.
@@ -135,7 +135,7 @@ export default function AboutPage() {
               <motion.div className="relative z-10" whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
                 <Image
                   src="/placeholder.svg?height=400&width=600"
-                  alt="Mereb Technologies Team"
+                  alt="Negarit Systems Team"
                   width={600}
                   height={400}
                   className="rounded-2xl shadow-2xl"

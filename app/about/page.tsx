@@ -9,15 +9,14 @@ import Image from "next/image"
 export default function AboutPage() {
   const teamMembers = [
     {
-      name: "Abebe Tadesse",
-      role: "Full-Stack Developer & Co-Founder",
-      specialization: "React, Node.js, System Architecture",
-      image: "/placeholder.svg?height=300&width=300",
-      description: "Passionate about creating scalable web applications with modern technologies.",
-      social: { linkedin: "#", github: "#", twitter: "#" },
+      name: "Abdullah Farid",
+      role: "Backend Developer & ML Engineer",
+      specialization: "Node.js, Nest.js, FastApi, Database Design, Python, C++",
+      image: "/profile-images/Screenshot 2025-07-11 at 16.02.30.png",
+      description: "As a Backend Developer & ML Engineer, I architect and build high-performance backend systems and intelligent solutions. Using Node.js, Nest.js, FastAPI, and C++, I create scalable APIs and optimized database designs. With Python expertise, I tackle complex challenges, delivering efficient, robust systems that power innovation."
     },
     {
-      name: "Hanan Mohammed",
+      name: "Bisrat Berhanu",
       role: "UI/UX Designer & Co-Founder",
       specialization: "User Experience, Interface Design, Prototyping",
       image: "/placeholder.svg?height=300&width=300",
@@ -25,7 +24,7 @@ export default function AboutPage() {
       social: { linkedin: "#", github: "#", twitter: "#" },
     },
     {
-      name: "Dawit Alemayehu",
+      name: "Hermon Getachew",
       role: "Backend Developer & Co-Founder",
       specialization: "Python, Django, Database Design",
       image: "/placeholder.svg?height=300&width=300",
@@ -33,44 +32,39 @@ export default function AboutPage() {
       social: { linkedin: "#", github: "#", twitter: "#" },
     },
     {
-      name: "Meron Getachew",
-      role: "Frontend Developer & Co-Founder",
-      specialization: "React, Vue.js, Mobile Development",
-      image: "/placeholder.svg?height=300&width=300",
-      description: "Focused on creating responsive and interactive user interfaces.",
-      social: { linkedin: "#", github: "#", twitter: "#" },
+      name: "Kidus Melaku",
+      role: "Backend Developer & AI Engineer",
+      specialization: "Node.js, Hono.js, Golang, Gin, Database Design, Docker, Python, C++",
+      image: "/profile-images/eskalate_profile.jpg",
+      description: "I build reliable, high-performance backend systems and bring AI solutions to life. With deep experience in modern backend stacks. From Node.js to Golang, I specialize in crafting scalable APIs, robust database architectures, and containerized services. Passionate about turning complex problems into elegant code."
     },
     {
-      name: "Samuel Bekele",
-      role: "AI/ML Engineer & Co-Founder",
-      specialization: "Machine Learning, Data Science, Python",
-      image: "/placeholder.svg?height=300&width=300",
-      description: "Passionate about leveraging AI to solve complex business problems.",
-      social: { linkedin: "#", github: "#", twitter: "#" },
+      name: "Melakeselam Yitbarek",
+      role: "Frontend Developer",
+      specialization: "React, Next.js, Tailwind CSS and its ecosystem, Ant Design, Component Architecture, State Management, Performance Optimization, CI/CD",
+      image: "/profile-images/image.png",
+      description: "Skilled frontend developer with experience in building performant, scalable, and accessible user interfaces. Passionate about clean code, responsive design, and delivering great user experiences.",
     },
     {
-      name: "Bethlehem Haile",
-      role: "DevOps Engineer & Co-Founder",
-      specialization: "AWS, Docker, CI/CD, Infrastructure",
-      image: "/placeholder.svg?height=300&width=300",
-      description: "Expert in cloud infrastructure and deployment automation.",
-      social: { linkedin: "#", github: "#", twitter: "#" },
+      name: "Nahom Mitiku",
+      role: "Frontend Developer & UI/UX designer",
+      specialization: "Nuxt, Nest.js, React.js, Django, Database,figma, Tailwind Css, Bootstrap, Python, C++,C ",
+      image: "/profile-images/20250711_113504.jpg",
+      description:" I’m a Frontend Developer and UI/UX Designer focused on creating clean, responsive, and user-friendly digital experiences. With a strong eye for design and solid development skills, I bridge the gap between visuals and functionality. I enjoy turning complex ideas into intuitive interfaces that users love. Collaborative, detail-oriented, and driven to deliver quality in every project."
     },
     {
-      name: "Yonas Tesfaye",
-      role: "Mobile Developer & Co-Founder",
-      specialization: "React Native, Flutter, iOS/Android",
-      image: "/placeholder.svg?height=300&width=300",
-      description: "Specialized in creating cross-platform mobile applications.",
-      social: { linkedin: "#", github: "#", twitter: "#" },
+      name: "Simon Assfaw",
+      role: "Frontend Developer",
+      specialization: "React, Next.js, Tailwind CSS, Beginner Express.js, State Management with Redux Toolkit",
+      image: "/profile-images/183A9650(1)(1).png",
+      description: "Skilled in creating dynamic user interfaces with React and Next.js, with beginner knowledge in Express.js for backend basics, and experience in state management using Redux Toolkit.",
     },
     {
-      name: "Rahel Assefa",
-      role: "Product Manager & Co-Founder",
-      specialization: "Product Strategy, Project Management, Agile",
-      image: "/placeholder.svg?height=300&width=300",
-      description: "Focused on delivering products that create real value for users.",
-      social: { linkedin: "#", github: "#", twitter: "#" },
+      name: "Yonatan Tizazu",
+      role: "Backend Developer & DevOps Engineer",
+      specialization: " Node.js, Express.js, Nest.js, Hono.js, Golang, Gin , Gorilla Mux, Database Design, AWS, Docker, CI/CD, Infrastructure",
+      image: "/profile-images/pp(1)(1).png",
+      description: "Expert in building robust backend systems, APIs, cloud infrastructure and deployment automation.",
     },
   ]
 
@@ -106,31 +100,22 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="grid lg:grid-cols-2 gap-12 items-center mb-20"
           >
-            <div>
-              <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Founded in 2025
-              </h2>
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                <p>
-                  Negarit Systems was born from the shared vision of eight passionate graduates from Addis Ababa
-                  University's Institute of Technology. United by our love for technology and driven by the desire to
-                  create meaningful impact, we came together to form a company that would bridge the gap between
-                  innovative ideas and practical solutions.
-                </p>
-                <p>
-                  Our diverse team brings together expertise in UI/UX design, full-stack development, backend
-                  engineering, artificial intelligence, mobile development, DevOps, and product management. This
-                  multidisciplinary approach allows us to tackle complex challenges from every angle and deliver
-                  comprehensive solutions.
-                </p>
-                <p>
-                  From our headquarters in Addis Ababa, we're on a mission to create innovative, impactful software
-                  solutions that not only serve local needs but also compete on the global stage. We believe that great
-                  technology knows no boundaries, and we're proud to represent Ethiopia in the international tech
-                  community.
-                </p>
-              </div>
+            
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                <span className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Negarit Systems</span> was born from the shared vision of eight passionate graduates from Addis Ababa
+                Institute of Technology. United by our love for technology and driven by the desire to
+                create meaningful impact, we came together to form a company that would bridge the gap between
+                innovative ideas and practical solutions.
+              </p>
+              <p>
+                Our diverse team brings together expertise in UI/UX design, full-stack development, backend
+                engineering, artificial intelligence, mobile development, DevOps, and product management. This
+                multidisciplinary approach allows us to tackle complex challenges from every angle and deliver
+                comprehensive solutions.
+              </p>
             </div>
+            
             <div className="relative">
               <motion.div className="relative z-10" whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
                 <Image
@@ -204,7 +189,7 @@ export default function AboutPage() {
               Meet Our Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Eight passionate individuals united by a shared vision to create innovative technology solutions
+              We are passionate individuals united by a shared vision to create innovative technology solutions
             </p>
           </motion.div>
 
@@ -245,30 +230,6 @@ export default function AboutPage() {
                     <p className="text-sm text-muted-foreground mb-4">{member.specialization}</p>
 
                     <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{member.description}</p>
-
-                    <div className="flex justify-center gap-3">
-                      <motion.a
-                        href={member.social.linkedin}
-                        whileHover={{ scale: 1.2 }}
-                        className="text-blue-600 hover:text-blue-700 transition-colors"
-                      >
-                        <Linkedin className="h-5 w-5" />
-                      </motion.a>
-                      <motion.a
-                        href={member.social.github}
-                        whileHover={{ scale: 1.2 }}
-                        className="text-slate-600 hover:text-slate-700 transition-colors"
-                      >
-                        <Github className="h-5 w-5" />
-                      </motion.a>
-                      <motion.a
-                        href={member.social.twitter}
-                        whileHover={{ scale: 1.2 }}
-                        className="text-blue-400 hover:text-blue-500 transition-colors"
-                      >
-                        <Twitter className="h-5 w-5" />
-                      </motion.a>
-                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

@@ -297,7 +297,7 @@ export default function CareersPage() {
                 className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg bg-transparent"
                 asChild
               >
-                <Link href="https://linkedin.com/company/mereb-technologies" target="_blank">
+                <Link href="https://linkedin.com/company/negarit-systems" target="_blank">
                   View on LinkedIn
                   <ExternalLink className="h-5 w-5 ml-2" />
                 </Link>

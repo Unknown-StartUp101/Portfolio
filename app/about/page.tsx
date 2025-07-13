@@ -15,41 +15,28 @@ export default function AboutPage() {
       role: "Backend Developer & ML Engineer",
       specialization: "Node.js, Nest.js, FastApi, Database Design, Python, C++",
       image: "/profile-images/Screenshot 2025-07-11 at 16.02.30.png",
-      description:
-        "As a Backend Developer & ML Engineer, I architect and build high-performance backend systems and intelligent solutions. Using Node.js, Nest.js, FastAPI, and C++, I create scalable APIs and optimized database designs. With Python expertise, I tackle complex challenges, delivering efficient, robust systems that power innovation.",
-      shortDescription:
-        "Backend Developer & ML Engineer specializing in high-performance systems and intelligent solutions.",
-      social: { linkedin: "https://www.linkedin.com/in/abdullah-75f/", github: "#", twitter: "#" },
+      description: "Backend Developer & ML Engineer skilled in building high-performance systems, scalable APIs, and optimized databases. Solves complex problems with efficient, innovative solutions."
     },
     {
       name: "Bisrat Berhanu",
-      role: "UI/UX Designer & Co-Founder",
-      specialization: "User Experience, Interface Design, Prototyping",
-      image: "/placeholder.svg?height=300&width=300",
-      description:
-        "Dedicated to crafting intuitive and beautiful user experiences that delight users and drive business success. Expert in user research, wireframing, prototyping, and design systems.",
-      shortDescription: "UI/UX Designer dedicated to crafting intuitive and beautiful user experiences.",
-      social: { linkedin: "https://www.linkedin.com/in/bisrat-berhanu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", github: "#", twitter: "#" },
+      role: "Backend Developer & Data Engineer",
+      specialization: "Python, Golang, PostgreSQL, Docker, Server Administration",
+      image: "/profile-images/bisrat.jpg",
+      description: "Experienced in developing robust APIs for backend applications and managing servers for large-scale image and video generation. Experienced in GPU sharding, SSH-based server operations, and efficient data processing and refinement."
     },
     {
       name: "Hermon Getachew",
-      role: "Backend Developer & Co-Founder",
-      specialization: "Python, Django, Database Design",
-      image: "/placeholder.svg?height=300&width=300",
-      description:
-        "Expert in building robust backend systems and APIs with a focus on scalability, security, and performance. Passionate about clean architecture and best practices in software development.",
-      shortDescription: "Expert in building robust backend systems and APIs with focus on scalability.",
-      social: { linkedin: "https://linkedin.com/in/hermon-getachew", github: "#", twitter: "#" },
+      role: "Backend Developer & DevOps Engineer",
+      specialization: "Node.js, NestJS,  ExpressJS, Hono.js, Golang, Docker, CI/CD, Linux/Unix",
+      image: "/profile-images/hermon.jpg",
+      description: "Proficient in architecting high-performance backend systems, optimizing complex database structures, and designing scalable, fault-tolerant systems with expertise in microservices and extensive DevOps experience in automation and infrastructure management."
     },
     {
       name: "Kidus Melaku",
       role: "Backend Developer & AI Engineer",
       specialization: "Node.js, Hono.js, Golang, Gin, Database Design, Docker, Python, C++",
       image: "/profile-images/eskalate_profile.jpg",
-      description:
-        "I build reliable, high-performance backend systems and bring AI solutions to life. With deep experience in modern backend stacks. From Node.js to Golang, I specialize in crafting scalable APIs, robust database architectures, and containerized services. Passionate about turning complex problems into elegant code.",
-      shortDescription: "Backend Developer & AI Engineer building reliable, high-performance systems and AI solutions.",
-      social: { linkedin: "https://linkedin.com/in/kidus-melaku", github: "#", twitter: "#" },
+      description: "Backend Developer & ML Engineer who builds reliable, high-performance systems and brings AI solutions to life. Experienced in modern backend architectures, with a focus on scalable APIs, robust database design, and solving complex problems with clean, efficient code."
     },
     {
       name: "Melakeselam Yitbarek",
@@ -67,11 +54,7 @@ export default function AboutPage() {
       role: "Frontend Developer & UI/UX designer",
       specialization: "Nuxt, Nest.js, React.js, Django, Database, Figma, Tailwind CSS, Bootstrap, Python, C++, C",
       image: "/profile-images/20250711_113504.jpg",
-      description:
-        "I'm a Frontend Developer and UI/UX Designer focused on creating clean, responsive, and user-friendly digital experiences. With a strong eye for design and solid development skills, I bridge the gap between visuals and functionality. I enjoy turning complex ideas into intuitive interfaces that users love. Collaborative, detail-oriented, and driven to deliver quality in every project.",
-      shortDescription:
-        "Frontend Developer & UI/UX Designer creating clean, responsive, and user-friendly experiences.",
-      social: { linkedin: "https://linkedin.com/in/nahom-mitiku", github: "#", twitter: "#" },
+      description: "Frontend Developer and UI/UX Designer passionate about crafting clean, responsive, and user-friendly interfaces. I combine design sense with development skills to create intuitive digital experiences."
     },
     {
       name: "Simon Assfaw",

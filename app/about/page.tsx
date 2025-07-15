@@ -11,71 +11,58 @@ export default function AboutPage() {
 
   const teamMembers = [
     {
-      name: "Abdullah Farid",
-      role: "Backend Developer & ML Engineer",
-      specialization: "Node.js, Nest.js, FastApi, Database Design, Python, C++",
-      image: "/profile-images/Screenshot 2025-07-11 at 16.02.30.png",
-      description: "Backend Developer & ML Engineer skilled in building high-performance systems, scalable APIs, and optimized databases. Solves complex problems with efficient, innovative solutions."
-    },
-    {
       name: "Bisrat Berhanu",
       role: "Backend Developer & Data Engineer",
-      specialization: "Python, Golang, PostgreSQL, Docker, Server Administration",
-      image: "/profile-images/bisrat.jpg",
+      image: "/profile-images/bisrat.JPG",
       description: "Experienced in developing robust APIs for backend applications and managing servers for large-scale image and video generation. Experienced in GPU sharding, SSH-based server operations, and efficient data processing and refinement."
+    },
+    {
+      name: "Yonatan Tizazu",
+      role: "Backend Developer & DevOps Engineer",
+      image: "/profile-images/pp(1)(1).png",
+      description:
+        "Expert in building robust backend systems, APIs, cloud infrastructure and deployment automation. Passionate about DevOps practices, containerization, and creating scalable, maintainable systems.",
+      // social: { linkedin: "https://linkedin.com/in/yonatan-tizazu", github: "#", twitter: "#" },
     },
     {
       name: "Hermon Getachew",
       role: "Backend Developer & DevOps Engineer",
-      specialization: "Node.js, NestJS,  ExpressJS, Hono.js, Golang, Docker, CI/CD, Linux/Unix",
-      image: "/profile-images/hermon.jpg",
-      description: "Proficient in architecting high-performance backend systems, optimizing complex database structures, and designing scalable, fault-tolerant systems with expertise in microservices and extensive DevOps experience in automation and infrastructure management."
-    },
-    {
-      name: "Kidus Melaku",
-      role: "Backend Developer & AI Engineer",
-      specialization: "Node.js, Hono.js, Golang, Gin, Database Design, Docker, Python, C++",
-      image: "/profile-images/eskalate_profile.jpg",
-      description: "Backend Developer & ML Engineer who builds reliable, high-performance systems and brings AI solutions to life. Experienced in modern backend architectures, with a focus on scalable APIs, robust database design, and solving complex problems with clean, efficient code."
+      image: "/profile-images/hermon.JPG",
+      description: "Highly skilled in designing and implementing robust, high-performance backend systems, with a proven ability to optimize complex database architectures for efficiency and scalability. Proficient in developing fault-tolerant microservices and orchestrating seamless deployment pipelines. Brings strong DevOps expertise, with a focus on automation and infrastructure management to ensure reliable, scalable solutions."
     },
     {
       name: "Melakeselam Yitbarek",
       role: "Frontend Developer",
-      specialization:
-        "React, Next.js, Tailwind CSS and its ecosystem, Ant Design, Component Architecture, State Management, Performance Optimization, CI/CD",
       image: "/profile-images/image.png",
-      description:
-        "Skilled frontend developer with experience in building performant, scalable, and accessible user interfaces. Passionate about clean code, responsive design, and delivering great user experiences.",
-      shortDescription: "Frontend developer building performant, scalable, and accessible user interfaces.",
-      social: { linkedin: "https://www.linkedin.com/in/melakeselam-yitbarek-se", github: "#", twitter: "#" },
+      description: "Experienced Frontend Developer with a strong track record of building performant, scalable, and accessible web applications. Skilled in crafting responsive, user-centric interfaces with a focus on clean, maintainable code and modern best practices. Passionate about delivering great user experiences through thoughtful design and efficient development.",
+      // social: { linkedin: "https://www.linkedin.com/in/melakeselam-yitbarek-se", github: "#", twitter: "#" },
+    },
+    {
+      name: "Abdullah Farid",
+      role: "Backend Developer & ML Engineer",
+      image: "/profile-images/Screenshot 2025-07-11 at 16.02.30.png",
+      description: "Seasoned Backend Developer and ML Engineer adept at architecting scalable systems and deploying machine learning models. Proficient in crafting efficient APIs and data pipelines with clean, maintainable code. Committed to leveraging modern practices for robust, data-driven solutions. Passionate about optimizing performance and delivering impactful results."
+    },
+
+    {
+      name: "Kidus Melaku",
+      role: "Backend Developer & AI Engineer",
+      image: "/profile-images/eskalate_profile.jpg",
+      description: "Backend Developer & ML Engineer who builds reliable, high-performance systems and brings AI solutions to life. Experienced in modern backend architectures, with a focus on scalable APIs, robust database design, and solving complex problems with clean, efficient code."
     },
     {
       name: "Nahom Mitiku",
       role: "Frontend Developer & UI/UX designer",
-      specialization: "Nuxt, Nest.js, React.js, Django, Database, Figma, Tailwind CSS, Bootstrap, Python, C++, C",
       image: "/profile-images/20250711_113504.jpg",
       description: "Frontend Developer and UI/UX Designer passionate about crafting clean, responsive, and user-friendly interfaces. I combine design sense with development skills to create intuitive digital experiences."
     },
     {
       name: "Simon Assfaw",
       role: "Frontend Developer",
-      specialization: "React, Next.js, Tailwind CSS, Beginner Express.js, State Management with Redux Toolkit",
       image: "/profile-images/183A9650(1)(1).png",
       description:
-        "Skilled in creating dynamic user interfaces with React and Next.js, with beginner knowledge in Express.js for backend basics, and experience in state management using Redux Toolkit.",
-      shortDescription: "Frontend developer skilled in creating dynamic user interfaces with React and Next.js.",
-      social: { linkedin: "https://linkedin.com/in/simon-assfaw", github: "#", twitter: "#" },
-    },
-    {
-      name: "Yonatan Tizazu",
-      role: "Backend Developer & DevOps Engineer",
-      specialization:
-        "Node.js, Express.js, Nest.js, Hono.js, Golang, Gin, Gorilla Mux, Database Design, AWS, Docker, CI/CD, Infrastructure",
-      image: "/profile-images/pp(1)(1).png",
-      description:
-        "Expert in building robust backend systems, APIs, cloud infrastructure and deployment automation. Passionate about DevOps practices, containerization, and creating scalable, maintainable systems.",
-      shortDescription: "Backend Developer & DevOps Engineer expert in robust systems and cloud infrastructure.",
-      social: { linkedin: "https://linkedin.com/in/yonatan-tizazu", github: "#", twitter: "#" },
+        "Skilled frontend developer passionate about crafting interactive, user-friendly interfaces. Combines modern development practices and strong state management to build responsive, visually appealing web experiences that simplify complex ideas.",
+      // social: { linkedin: "https://linkedin.com/in/simon-assfaw", github: "#", twitter: "#" },
     },
   ]
 
@@ -231,20 +218,19 @@ export default function AboutPage() {
                       </motion.div>
                       <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
                         <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 text-xs">
-                          Co-Founder
+                          {member.name == "Bisrat Berhanu" ? "CEO" : member.name == "Yonatan Tizazu" ? "COO": member.name == "Hermon Getachew" || member.name == "Melakeselam Yitbarek" ? "CTO" : "Co-Founder"}
                         </Badge>
                       </div>
                     </div>
 
                     <h3 className="text-xl font-bold mb-2 text-slate-800 dark:text-white">{member.name}</h3>
                     <p className="text-blue-600 dark:text-blue-400 font-semibold mb-3">{member.role}</p>
-                    <p className="text-sm text-muted-foreground mb-4">{member.specialization}</p>
                     <p className="text-sm text-muted-foreground mb-6 leading-relaxed line-clamp-3">
-                      {member.shortDescription}
+                      {member.description}
                     </p>
 
                     {/* Social Links */}
-                    <div className="flex justify-center space-x-3">
+                    {/* <div className="flex justify-center space-x-3">
                       {member.social?.linkedin && (
                         <a
                           href={member.social.linkedin}
@@ -275,11 +261,11 @@ export default function AboutPage() {
                           <Twitter size={16} />
                         </a>
                       )}
-                    </div>
+                    </div> */}
                   </CardContent>
 
                   {/* Hover Overlay */}
-                  {hoveredMember === index && (
+                  {hoveredMember === index && ( 
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -292,8 +278,7 @@ export default function AboutPage() {
                         <p className="text-blue-600 dark:text-blue-400 font-semibold mb-3">{member.role}</p>
                         <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{member.description}</p>
 
-                        {/* Enhanced Social Links */}
-                        <div className="flex justify-center space-x-3 mt-4">
+                        {/* <div className="flex justify-center space-x-3 mt-4">
                           {member.social?.linkedin && (
                             <a
                               href={member.social.linkedin}
@@ -316,7 +301,7 @@ export default function AboutPage() {
                               <span>GitHub</span>
                             </a>
                           )}
-                        </div>
+                        </div>  */}
                       </div>
                     </motion.div>
                   )}

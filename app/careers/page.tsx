@@ -134,79 +134,68 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Open Positions */}
+      {/* Stay Tuned Banner */}
       <section className="py-20 px-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-blue-900">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <motion.div
-            className="text-center mb-16"
+            className="text-center"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Open Positions
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Find your perfect role and start your journey with us
-            </p>
+            <Card className="bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border-0 shadow-xl">
+              <CardContent className="p-16">
+                <motion.div
+                  className="w-24 h-24 mx-auto mb-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center"
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
+                  viewport={{ once: true }}
+                >
+                  <span className="text-white text-4xl">🚀</span>
+                </motion.div>
+                
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  Stay Tuned!
+                </h2>
+                
+                <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+                  We're currently expanding our team and will be posting exciting opportunities soon. 
+                  Follow us on LinkedIn to be the first to know when positions open up!
+                </p>
+                
+                <motion.div
+                  className="flex flex-col sm:flex-row gap-4 justify-center"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.8 }}
+                  viewport={{ once: true }}
+                >
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 text-lg"
+                    asChild
+                  >
+                    <Link href="https://linkedin.com/company/negarit-systems" target="_blank">
+                      Follow on LinkedIn
+                      <ExternalLink className="h-5 w-5 ml-2" />
+                    </Link>
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 text-lg bg-transparent"
+                    asChild
+                  >
+                    <Link href="/contact">
+                      Contact Us
+                    </Link>
+                  </Button>
+                </motion.div>
+              </CardContent>
+            </Card>
           </motion.div>
-
-          <div className="grid lg:grid-cols-2 gap-8">
-            {openPositions.map((position, index) => (
-              <motion.div
-                key={position.title}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -5 }}
-              >
-                <Card className="h-full bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300">
-                  <CardContent className="p-8">
-                    <div className="flex justify-between items-start mb-4">
-                      <div>
-                        <h3 className="text-2xl font-bold mb-2 text-slate-800 dark:text-white">{position.title}</h3>
-                        <p className="text-blue-600 dark:text-blue-400 font-semibold">{position.department}</p>
-                      </div>
-                      <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0">
-                        {position.type}
-                      </Badge>
-                    </div>
-
-                    <div className="flex flex-wrap gap-4 mb-6 text-sm text-muted-foreground">
-                      <div className="flex items-center gap-2">
-                        <MapPin className="h-4 w-4" />
-                        <span>{position.location}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Briefcase className="h-4 w-4" />
-                        <span>{position.experience}</span>
-                      </div>
-                    </div>
-
-                    <p className="text-muted-foreground mb-6 leading-relaxed">{position.description}</p>
-
-                    <div className="mb-6">
-                      <h4 className="font-semibold mb-3 text-slate-800 dark:text-white">Key Requirements:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {position.requirements.map((req, idx) => (
-                          <Badge key={idx} variant="secondary" className="text-xs">
-                            {req}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-
-                    <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
-                      Apply Now
-                      <ExternalLink className="h-4 w-4 ml-2" />
-                    </Button>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -284,13 +273,7 @@ export default function CareersPage() {
               Don't see a position that fits? We're always looking for talented individuals. Send us your resume and
               let's talk about how you can contribute to our mission.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg" asChild>
-                <Link href="https://forms.google.com/your-form-link" target="_blank">
-                  Apply via Google Form
-                  <ExternalLink className="h-5 w-5 ml-2" />
-                </Link>
-              </Button>
+            <div className="flex justify-center">
               <Button
                 size="lg"
                 variant="outline"
@@ -303,9 +286,6 @@ export default function CareersPage() {
                 </Link>
               </Button>
             </div>
-            <p className="text-blue-100 mt-6 text-sm">
-              * These are temporary application links. We're currently setting up our permanent recruitment system.
-            </p>
           </motion.div>
         </div>
       </section>

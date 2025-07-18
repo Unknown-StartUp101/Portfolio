@@ -155,15 +155,25 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">
+                <a 
+                  href="mailto:negarit.system.tech@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 text-sm hover:text-blue-400 transition-colors"
+                >
                   negarit.system.tech@gmail.com
-                </span>
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Linkedin className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">
+                <a 
+                  href="https://www.linkedin.com/company/negarit-systems"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 text-sm hover:text-blue-400 transition-colors"
+                >
                   https://www.linkedin.com/company/negarit-systems
-                </span>
+                </a>
               </div>
             </div>
 

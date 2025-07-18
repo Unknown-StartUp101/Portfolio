@@ -387,7 +387,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Tech Stack Section */}
+      {/* Why Choose Us Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-blue-900">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -398,35 +398,57 @@ export default function HomePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Our Tech Stack
+              Why Choose Negarit Systems?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We use cutting-edge technologies to build robust, scalable solutions
+              We bring a unique blend of local expertise and global standards to every project
             </p>
           </motion.div>
 
-          <motion.div
-            className="flex flex-wrap justify-center gap-4"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            {techStack.map((tech, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: "🌍",
+                title: "Global Perspective",
+                description: "Born in Ethiopia, built for the world. We understand both local needs and international standards."
+              },
+              {
+                icon: "⚡",
+                title: "Fast Delivery",
+                description: "Agile development approach ensures quick turnaround times without compromising quality."
+              },
+              {
+                icon: "🤝",
+                title: "Dedicated Support",
+                description: "24/7 support available. We're here for you every step of the way, even after project completion."
+              },
+              {
+                icon: "💡",
+                title: "Innovation First",
+                description: "Cutting-edge solutions with the latest technologies to keep you ahead of the competition."
+              }
+            ].map((feature, index) => (
               <motion.div
-                key={tech}
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                key={feature.title}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ y: -10 }}
+                className="group"
               >
-                <Badge className="text-lg px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 hover:from-blue-700 hover:to-purple-700 transition-all duration-300">
-                  {tech}
-                </Badge>
+                <Card className="h-full bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300">
+                  <CardContent className="p-8 text-center">
+                    <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                      {feature.icon}
+                    </div>
+                    <h3 className="text-xl font-bold mb-4 text-slate-800 dark:text-white">{feature.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 

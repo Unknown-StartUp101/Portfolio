@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -53,8 +53,33 @@ function Hero3D() {
 // Counter Animation Component
 function AnimatedCounter({ end, duration = 2000, suffix = "" }: { end: number; duration?: number; suffix?: string }) {
   const [count, setCount] = useState(0)
+  const [inView, setInView] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true)
+        }
+      },
+      { threshold: 0.5 }
+    )
+
+    if (ref.current) {
+      observer.observe(ref.current)
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current)
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    if (!inView) return
+
     let startTime: number
     let animationFrame: number
 
@@ -71,10 +96,10 @@ function AnimatedCounter({ end, duration = 2000, suffix = "" }: { end: number; d
 
     animationFrame = requestAnimationFrame(animate)
     return () => cancelAnimationFrame(animationFrame)
-  }, [end, duration])
+  }, [inView, end, duration])
 
   return (
-    <span>
+    <span ref={ref}>
       {count}
       {suffix}
     </span>

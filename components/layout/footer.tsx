@@ -4,17 +4,17 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, Send } from "lucide-react"
+import { Facebook, X, Linkedin, Instagram, Mail, Phone, MapPin, Send } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    // { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: X, href: "https://x.com/negaritsystems", label: "X" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/negarit-systems", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/negaritsystems", label: "Instagram" },
   ]
 
   const quickLinks = [
@@ -133,11 +133,15 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">+251 911 123 456</span>
+                <span className="text-slate-300 text-sm">+251911524940</span>
               </div>
-              <div className="flex items-center space-x-3">
+              {/* <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
                 <span className="text-slate-300 text-sm">hello@merebtech.com</span>
+              </div> */}
+              <div className="flex items-center space-x-3">
+                <Linkedin className="h-5 w-5 text-blue-400 flex-shrink-0" />
+                <span className="text-slate-300 text-sm">https://www.linkedin.com/company/negarit-systems</span>
               </div>
             </div>
 

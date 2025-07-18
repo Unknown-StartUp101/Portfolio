@@ -48,7 +48,7 @@ export default function AboutPage() {
       name: "Kidus Melaku",
       role: "Backend Developer & AI Engineer",
       image: "/profile-images/eskalate_profile.jpg",
-      description: "Skilled in building reliable, high-performance backend systems and bringing AI solutions to life. Experienced in designing scalable APIs, robust database architectures, and containerized microservices. Strong focus on transforming complex challenges into efficient, elegant solutions that drive business success."
+      description: "Skilled in building high-performance backend systems and delivering AI solutions. Experienced in scalable APIs, robust databases, and containerized microservices. Focused on turning complex challenges into efficient, impactful solutions."
     },
     {
       name: "Nahom Mitiku",

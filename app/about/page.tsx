@@ -69,18 +69,35 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-950">
       {/* Hero Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50 dark:from-blue-950/50 dark:to-purple-950/50"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <motion.div
+              className="inline-block mb-6"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+            >
+              <div className="w-20 h-20 mx-auto bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mb-6">
+                <span className="text-white font-bold text-2xl">N</span>
+              </div>
+            </motion.div>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               Our Story
             </h1>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            <motion.div
+              className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"
+              initial={{ width: 0 }}
+              animate={{ width: 96 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            />
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               Born from passion, driven by innovation, and united by a shared vision to transform the tech landscape
               from Ethiopia to the world.
             </p>
@@ -96,35 +113,40 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="grid lg:grid-cols-2 gap-12 items-center mb-20"
+            className="mb-20"
           >
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                <span className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Negarit Systems
-                </span>{" "}
-                was born from the shared vision of eight passionate graduates from Addis Ababa Institute of Technology.
-                United by our love for technology and driven by the desire to create meaningful impact, we came together
-                to form a company that would bridge the gap between innovative ideas and practical solutions.
-              </p>
-              <p>
-                Our diverse team brings together expertise in UI/UX design, full-stack development, backend engineering,
-                artificial intelligence, mobile development, DevOps, and product management. This multidisciplinary
-                approach allows us to tackle complex challenges from every angle and deliver comprehensive solutions.
-              </p>
-            </div>
-
-            <div className="relative">
-              <motion.div className="relative z-10" whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
-                <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Negarit Systems Team"
-                  width={600}
-                  height={400}
-                  className="rounded-2xl shadow-2xl"
-                />
+            <div className="space-y-8 text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-blue-600 to-purple-600 rounded-full"></div>
+                <p className="pl-8">
+                  <span className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block">
+                    Negarit Systems
+                  </span>
+                  was born from the shared vision of eight passionate graduates from Addis Ababa Institute of Technology.
+                  United by our love for technology and driven by the desire to create meaningful impact, we came together
+                  to form a company that would bridge the gap between innovative ideas and practical solutions.
+                </p>
               </motion.div>
-              <div className="absolute -top-4 -right-4 w-full h-full bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl -z-10" />
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <div className="absolute -right-4 top-0 w-1 h-full bg-gradient-to-b from-purple-600 to-pink-600 rounded-full"></div>
+                <p className="pr-8 text-right">
+                  Our diverse team brings together expertise in UI/UX design, full-stack development, backend engineering,
+                  artificial intelligence, mobile development, DevOps, and product management. This multidisciplinary
+                  approach allows us to tackle complex challenges from every angle and deliver comprehensive solutions.
+                </p>
+              </motion.div>
             </div>
           </motion.div>
 
@@ -135,9 +157,14 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
+              whileHover={{ y: -10 }}
             >
-              <Card className="h-full bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-800 dark:to-blue-900 border-0 shadow-xl">
-                <CardContent className="p-8">
+              <Card className="h-full bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-800 dark:to-blue-900 border-0 shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <CardContent className="p-8 relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mb-6">
+                    <span className="text-white font-bold text-xl">M</span>
+                  </div>
                   <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     Our Mission
                   </h3>
@@ -155,9 +182,14 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
+              whileHover={{ y: -10 }}
             >
-              <Card className="h-full bg-gradient-to-br from-purple-50 to-pink-50 dark:from-slate-800 dark:to-purple-900 border-0 shadow-xl">
-                <CardContent className="p-8">
+              <Card className="h-full bg-gradient-to-br from-purple-50 to-pink-50 dark:from-slate-800 dark:to-purple-900 border-0 shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <CardContent className="p-8 relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mb-6">
+                    <span className="text-white font-bold text-xl">V</span>
+                  </div>
                   <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                     Our Vision
                   </h3>
@@ -174,8 +206,9 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-blue-900">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-blue-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-purple-600/5"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 50 }}
@@ -183,9 +216,27 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
+            <motion.div
+              className="inline-block mb-6"
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-16 h-16 mx-auto bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mb-6">
+                <span className="text-white font-bold text-xl">👥</span>
+              </div>
+            </motion.div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Meet Our Team
             </h2>
+            <motion.div
+              className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"
+              initial={{ width: 0 }}
+              whileInView={{ width: 96 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              viewport={{ once: true }}
+            />
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We are passionate individuals united by a shared vision to create innovative technology solutions
             </p>
@@ -313,8 +364,9 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-20 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-pink-50/50 dark:from-purple-950/50 dark:to-pink-950/50"></div>
+        <div className="max-w-6xl mx-auto relative z-10">
           <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 50 }}
@@ -322,9 +374,27 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <motion.div
+              className="inline-block mb-6"
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-16 h-16 mx-auto bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mb-6">
+                <span className="text-white font-bold text-xl">💎</span>
+              </div>
+            </motion.div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               What Drives Us
             </h2>
+            <motion.div
+              className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mb-8"
+              initial={{ width: 0 }}
+              whileInView={{ width: 96 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              viewport={{ once: true }}
+            />
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Our core values shape everything we do and guide us in our mission to create impactful technology
             </p>

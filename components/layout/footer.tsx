@@ -1,21 +1,38 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Separator } from "@/components/ui/separator"
-import { Facebook, X, Linkedin, Instagram, Mail, Phone, MapPin, Send } from "lucide-react"
-import Link from "next/link"
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
+import {
+  Facebook,
+  X,
+  Linkedin,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+} from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const socialLinks = [
     // { icon: Facebook, href: "#", label: "Facebook" },
     { icon: X, href: "https://x.com/negaritsystems", label: "X" },
-    { icon: Linkedin, href: "https://www.linkedin.com/company/negarit-systems", label: "LinkedIn" },
-    { icon: Instagram, href: "https://www.instagram.com/negaritsystems", label: "Instagram" },
-  ]
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/company/negarit-systems",
+      label: "LinkedIn",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/negaritsystems",
+      label: "Instagram",
+    },
+  ];
 
   const quickLinks = [
     { name: "Home", href: "/" },
@@ -23,7 +40,7 @@ export default function Footer() {
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
     { name: "Careers", href: "/careers" },
-  ]
+  ];
 
   const services = [
     { name: "Web Development", href: "#" },
@@ -31,7 +48,7 @@ export default function Footer() {
     { name: "UI/UX Design", href: "#" },
     { name: "AI Solutions", href: "#" },
     { name: "Consulting", href: "#" },
-  ]
+  ];
 
   return (
     <footer className="bg-slate-900 text-white">
@@ -53,8 +70,9 @@ export default function Footer() {
               <span className="text-xl font-bold">Negarit Systems</span>
             </div>
             <p className="text-slate-300 mb-6 leading-relaxed">
-              Building innovative technology solutions from Ethiopia to the world. We create scalable, impactful
-              software that drives business growth.
+              Building innovative technology solutions from Ethiopia to the
+              world. We create scalable, impactful software that drives business
+              growth.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -135,13 +153,17 @@ export default function Footer() {
                 <Phone className="h-5 w-5 text-blue-400 flex-shrink-0" />
                 <span className="text-slate-300 text-sm">+251911524940</span>
               </div>
-              {/* <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">hello@merebtech.com</span>
-              </div> */}
+                <span className="text-slate-300 text-sm">
+                  negarit.system.tech@gmail.com
+                </span>
+              </div>
               <div className="flex items-center space-x-3">
                 <Linkedin className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">https://www.linkedin.com/company/negarit-systems</span>
+                <span className="text-slate-300 text-sm">
+                  https://www.linkedin.com/company/negarit-systems
+                </span>
               </div>
             </div>
 
@@ -187,18 +209,27 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex space-x-6 text-sm"
           >
-            <Link href="#" className="text-slate-400 hover:text-white transition-colors">
+            <Link
+              href="#"
+              className="text-slate-400 hover:text-white transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link href="#" className="text-slate-400 hover:text-white transition-colors">
+            <Link
+              href="#"
+              className="text-slate-400 hover:text-white transition-colors"
+            >
               Terms of Service
             </Link>
-            <Link href="#" className="text-slate-400 hover:text-white transition-colors">
+            <Link
+              href="#"
+              className="text-slate-400 hover:text-white transition-colors"
+            >
               Cookie Policy
             </Link>
           </motion.div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

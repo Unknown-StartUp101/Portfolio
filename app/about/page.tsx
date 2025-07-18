@@ -28,32 +28,32 @@ export default function AboutPage() {
       name: "Hermon Getachew",
       role: "Backend Developer & DevOps Engineer",
       image: "/profile-images/hermon.JPG",
-      description: "Highly skilled in designing and implementing robust, high-performance backend systems, with a proven ability to optimize complex database architectures for efficiency and scalability. Proficient in developing fault-tolerant microservices and orchestrating seamless deployment pipelines. Brings strong DevOps expertise, with a focus on automation and infrastructure management to ensure reliable, scalable solutions."
+      description: "Established in designing high-performance backend systems and optimizing complex databases for efficiency. Experienced in building fault-tolerant microservices and streamlining deployment pipelines. Strong DevOps focus on automation, reliability and scalable infrastructure."
     },
     {
       name: "Melakeselam Yitbarek",
       role: "Frontend Developer",
       image: "/profile-images/image.png",
-      description: "Experienced Frontend Developer with a strong track record of building performant, scalable, and accessible web applications. Skilled in crafting responsive, user-centric interfaces with a focus on clean, maintainable code and modern best practices. Passionate about delivering great user experiences through thoughtful design and efficient development.",
+      description: "Frontend Developer with a strong record of building fast, scalable, and accessible web apps. Skilled in clean, responsive UI design and modern best practices, with a passion for great user experiences.",
       // social: { linkedin: "https://www.linkedin.com/in/melakeselam-yitbarek-se", github: "#", twitter: "#" },
     },
     {
       name: "Abdullah Farid",
       role: "Backend Developer & ML Engineer",
       image: "/profile-images/Screenshot 2025-07-11 at 16.02.30.png",
-      description: "Seasoned Backend Developer and ML Engineer adept at architecting scalable systems and deploying machine learning models. Proficient in crafting efficient APIs and data pipelines with clean, maintainable code. Committed to leveraging modern practices for robust, data-driven solutions. Passionate about optimizing performance and delivering impactful results."
+      description: "Seasoned Backend Developer and ML Engineer skilled in building scalable systems and deploying ML models. Expert in efficient APIs and data pipelines, focused on clean code, modern practices, and performance-driven development."
     },
 
     {
       name: "Kidus Melaku",
       role: "Backend Developer & AI Engineer",
       image: "/profile-images/eskalate_profile.jpg",
-      description: "Backend Developer & ML Engineer who builds reliable, high-performance systems and brings AI solutions to life. Experienced in modern backend architectures, with a focus on scalable APIs, robust database design, and solving complex problems with clean, efficient code."
+      description: "Skilled in building reliable, high-performance backend systems and bringing AI solutions to life. Experienced in designing scalable APIs, robust database architectures, and containerized microservices. Strong focus on transforming complex challenges into efficient, elegant solutions that drive business success."
     },
     {
       name: "Nahom Mitiku",
       role: "Frontend Developer & UI/UX designer",
-      image: "/profile-images/20250711_113504.jpg",
+      image: "/profile-images/nah.JPG",
       description: "Frontend Developer and UI/UX Designer passionate about crafting clean, responsive, and user-friendly interfaces. I combine design sense with development skills to create intuitive digital experiences."
     },
     {

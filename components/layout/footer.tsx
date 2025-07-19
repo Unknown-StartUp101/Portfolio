@@ -178,7 +178,7 @@ export default function Footer() {
             </div>
 
             {/* Newsletter Signup */}
-            <div>
+            {/* <div>
               <h4 className="text-sm font-semibold mb-3">Stay Updated</h4>
               <div className="flex gap-2">
                 <Input
@@ -193,7 +193,7 @@ export default function Footer() {
                   <Send className="h-4 w-4" />
                 </Button>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

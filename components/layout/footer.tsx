@@ -208,11 +208,11 @@ export default function Footer() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-slate-400 text-sm"
+            className="text-slate-400 text-sm text-center w-full"
           >
             © {currentYear} Negarit Systems. All rights reserved.
           </motion.p>
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -237,7 +237,7 @@ export default function Footer() {
             >
               Cookie Policy
             </Link>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </footer>

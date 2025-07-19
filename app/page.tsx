@@ -453,7 +453,7 @@ export default function HomePage() {
       </section>
 
       {/* Success Metrics */}
-      <section className="py-20 px-4">
+      {/* <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
@@ -493,7 +493,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Core Values */}
       <section className="py-20 px-4 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-slate-800 dark:to-purple-900">

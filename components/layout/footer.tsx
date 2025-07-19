@@ -65,7 +65,7 @@ export default function Footer() {
           >
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">M</span>
+                <span className="text-white font-bold text-xl">NS</span>
               </div>
               <span className="text-xl font-bold">Negarit Systems</span>
             </div>

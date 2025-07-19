@@ -16,7 +16,7 @@ export const projects = [
       live: "https://health-sync-ivory.vercel.app/",
     },
     {
-      title: "Music Player",
+      title: "Rhythmix",
       description: "A full-stack music app with playing, uploading, searching and deleting capabilities. Implemented clean architecture principles and seamless state management.",
       image: "/projects/music.webm",
       technologies: ["React", "GO", "MongoDB", "RTK"],
@@ -45,7 +45,7 @@ export const projects = [
       live: "https://roha.dev.awura.tech/",
     },
     {
-      title: "Vehicle Tracking System",
+      title: "VoyageGuard",
       description: "IoT-based vehicle tracking system. It utilizes GPS, ELM327 (OBD2), and ESP32 for real-time monitoring of asset location and condition, incorporating machine learning for predictive maintenance.",
       image: "/projects/vehicle_tracking_system.png",
       technologies: ["React Native", "NestJS", "TypeORM", "Random Forest Model"],
